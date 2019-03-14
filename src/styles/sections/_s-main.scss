@@ -1,0 +1,359 @@
+.side__panel{
+  width: 78px;
+  border-right: 1px solid #bbb4b3;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  color: $grey;
+  text-transform: uppercase;
+}
+
+.menu{
+  margin-top: 45px;
+  &__btn{
+    font-weight: 800;
+    font-size: 0.6875rem;
+    img{
+      display: block;
+      margin: 0 auto;
+      padding-bottom: 12px;
+    }
+  }
+}
+
+.soc__list{
+  margin-bottom: 15px;
+  li{
+    font-size: 0.75rem;
+    writing-mode: tb-rl;
+    transform: rotate(-180deg);
+    display: block;
+    &:first-child{
+      margin-bottom: 35px;
+    }
+  }
+  i{
+    font-size: 1.0625rem;
+    margin-bottom: 8px;
+    transform: rotate(90deg);
+  }
+}
+
+.content{
+  margin-left: 78px;
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40px;
+}
+
+.callback{
+  font-weight: 800;
+  color: #fff;
+  font-size: 1.0625rem;
+  text-transform: uppercase;
+  span{
+    font-weight: 600;
+    color: $grey;
+    font-size: 0.6875rem;
+    display: block;
+    text-align: right;
+    margin-top: 10px;
+  }
+}
+
+.first-screen{
+  height: 100vh;
+  padding-left: 55px;
+  background: url(../img/main-bg.jpg);
+  background-size: 100%;
+  background-position: center;
+  .container{
+    position: relative;
+    height: 100%;
+  }
+}
+
+.main-title{
+  margin-top: 125px;
+  font-weight: 800;
+  color: $green;
+  font-size: 1.3125rem;
+}
+
+.owl{
+  &-one{
+    margin-top: 35px;
+    &__item{
+      color: #fff;
+      h2{
+        font-weight: 800;
+        font-size: 3.5rem;
+      }
+    }
+    &__list{
+      margin-top: 130px;
+      li{
+        font-size: 0.9375rem;
+        font-weight: 600;
+        width: 19%;
+        margin-right: 48px;
+        display: inline-block;
+        padding-bottom: 18px;
+        border-bottom: 1px solid $grey;
+        box-sizing: border-box;
+      }
+    }
+  }
+  &-dots{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    right: -70px;
+    align-items: flex-end;
+    bottom: 0;
+    top: 0;
+    justify-content: center;
+  }
+  &-dot{
+    margin: 10px 0;
+    display: block;
+    span{
+      width: 20px;
+      height: 1px;
+      background: #fff;
+      display: block;
+      transition: all 0.7s ease-in;
+    }
+    &.active{
+      span{
+        width: 40px;
+        height: 2px;
+        background: $green;
+      }
+    }
+  }
+}
+
+.down__btn{
+  background: $green;
+  width: 270px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  font-weight: 800;
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  overflow: hidden;
+  &:after{
+    content: '';
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: -15px;
+    display: block;
+    margin-left: -1px;
+    box-shadow: 0 0 15px 3px #fff;
+    background: 0 0;
+    transform: rotate(38deg);
+    animation: blick 2s ease-out infinite;
+    opacity: 1;
+    transition: opacity .28s ease-out;
+  }
+  &:hover:after{
+    opacity: 0;
+  }
+  img{
+    vertical-align: middle;
+    margin-right: 25px;
+  }
+}
+
+@keyframes blick{
+  0%{
+    left: 0%;
+  }
+  70%{
+    left: 120%;
+  }
+  100%{
+    left: 130%;
+  }
+}
+
+.second-screen{
+  height: 100vh;
+}
+
+.second-carousel{
+  margin-top: 0;
+  .owl-dot{
+    span{
+      background: #000;
+    }
+    &.active{
+      span{
+        background: $green;
+      }
+    }
+  }
+  &__item{
+    display: flex;
+    height: 100vh;
+  }
+  &__info{
+    margin: 110px 0 0 50px;
+  }
+  &__title{
+    font-weight: 800;
+    font-size: 3rem;
+  }
+  &__text{
+    margin-top: 50px;
+    font-size: 1.3125rem;
+  }
+  &__list{
+    display: flex;
+    margin-top: 100px;
+    li{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-end;
+      padding: 30px 37px;
+      width: 255px;
+      background: #f2f2f2;
+      text-align: center;
+      &:first-child{
+        margin-right: 20px;
+      }
+      img{
+        margin-bottom: 17px;
+      }
+    }
+  }
+  &__video{
+    position: relative;
+    display: inline-block;
+    flex: 0 1 auto;
+    &__preview{
+      height: 100%;
+    }
+    a{
+      position: absolute;
+      width: 130px;
+      height: 115px;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      top: 0;
+      margin: auto;
+      color: #fff;
+      font-weight: 700;
+      font-size: 0.9375rem;
+      text-align: center;
+      span{
+        margin-top: 20px;
+        display: block;
+      }
+    }
+    img{
+      display: inline-block!important;
+    }
+  }
+}
+
+.owl-carousel .owl-item{
+  img{
+    width: auto;
+  }
+}
+
+.progress{
+  margin-top: 80px;
+  &__row{
+    display: flex;
+    align-items: center;
+    &.reverse{
+      flex-direction: row-reverse;
+    }
+  }
+  &__text{
+    font-weight: 300;
+    color: $grey;
+    font-size: 2.375rem;
+    text-align: center;
+    flex: 1 0 auto;
+    .green{
+      color: $green;
+    }
+  }
+  &-carousel{
+    width: 455px;
+    position: relative;
+    .owl-nav{
+      position: absolute;
+      top:0;
+      right: -40px;
+      background: #fff;
+      button{
+        height: 60px;
+        width: 40px;
+      }
+    }
+  }
+  &__title{
+    font-weight: 800;
+    font-size: 3rem;
+    display: block;
+    text-align: center;
+    margin-bottom: 80px;
+  }
+  &__slider{
+    display: inline-block;
+    position: relative;
+    margin-left: 110px;
+    &__text{
+      text-align: center;
+      margin-top: 20px;
+      font-size: 1.125rem;
+      line-height: 26px;
+      .green{
+        font-weight: 800;
+        color: $green;
+      }
+      &-side{
+        position: absolute;
+        bottom: 72px;
+        right: -30px;
+        font-size: 0.6875rem;
+        font-weight: 800;
+        color: $grey;
+        writing-mode: tb-rl;
+        transform: rotate(-180deg);
+        display: block;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+.slider-counter{
+  position: absolute;
+  top: 0;
+  left: -30px;
+  color: $grey;
+  font-weight: 700;
+  font-size: 0.6875rem;
+  writing-mode: tb-rl;
+  transform: rotate(-180deg);
+}

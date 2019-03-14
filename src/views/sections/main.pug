@@ -1,0 +1,190 @@
+main
+  .side__panel
+    nav.menu
+      a(href="#").menu__btn
+        img(src="../img/menu.png")
+        | Меню
+    ul.soc__list
+      li
+        a(href="#")
+          i.fa.fa-vk
+          | VKONTAKTE
+      li
+        a(href="#")
+          i.fa.fa-instagram
+          | INSTAGRAM
+  section.content
+    section.first-screen
+      .container
+        include ../includes/header
+        h1.main-title Мы в Nambawan Travel
+        .owl-one.owl-carousel
+          div.owl-one__item 
+            h2 Организуем корпоративное
+              br
+              | путешествие для Ваших 
+              br
+              | сотрудников и клиентов
+            ul.owl-one__list
+              li Повышаем лояльность
+                br
+                | сотрудников
+              li Увеличиваем мотивацию
+                br 
+                | сотрудников
+              li Улучшаем имидж
+                br
+                | компании
+          div.owl-one__item 
+            h2 Организуем корпоративное
+              br
+              | путешествие для Ваших 
+              br
+              | сотрудников и клиентов 2
+            ul.owl-one__list
+              li Повышаем лояльность
+                br
+                | сотрудников
+              li Увеличиваем мотивацию
+                br 
+                | сотрудников
+              li Улучшаем имидж
+                br
+                | компании
+          div.owl-one__item 
+            h2 Организуем корпоративное
+              br
+              | путешествие для Ваших 
+              br
+              | сотрудников и клиентов 3
+            ul.owl-one__list
+              li Повышаем лояльность
+                br
+                | сотрудников
+              li Увеличиваем мотивацию
+                br 
+                | сотрудников
+              li Улучшаем имидж
+                br
+                | компании
+        a(href="#second").down__btn#down
+          img(src="../img/arrow.png")
+          | Мы в этом шарим!
+    section.second-screen#second
+      .container
+        .second-carousel.owl-carousel
+          .second-carousel__item
+            .second-carousel__video
+              img(src="../img/video.jpg").second-carousel__video__preview
+              a(href="#")
+                img(src="../img/play.png")
+                span Как это работает
+            .second-carousel__info
+              h2.second-carousel__title Только с нами 
+                br
+                | вы сможете знатно
+                br
+                | угареть!
+              p.second-carousel__text Гляньте наше чумовое видео, если не верите.
+                br
+                | Если хотите и вам такое же по итогу снимем — 
+                br 
+                | будет что вспомнить.
+              ul.second-carousel__list
+                li
+                  img(src="../img/world.png")
+                  | Работаем в любой точке планеты
+                li
+                  img(src="../img/space.png")
+                  | Но если на Земле все видели, то no problem...
+          .second-carousel__item
+            .second-carousel__video
+              img(src="../img/video.jpg").second-carousel__video__preview
+              a(href="#")
+                img(src="../img/play.png")
+                span Как это работает
+            .second-carousel__info
+              h2.second-carousel__title Только с нами 
+                br
+                | вы сможете знатно
+                br
+                | угареть!2
+              p.second-carousel__text Гляньте наше чумовое видео, если не верите.
+                br
+                | Если хотите и вам такое же по итогу снимем — 
+                br 
+                | будет что вспомнить.
+              ul.second-carousel__list
+                li
+                  img(src="../img/world.png")
+                  | Работаем в любой точке планеты
+                li
+                  img(src="../img/space.png")
+                  | Но если на Земле все видели, то no problem...
+          .second-carousel__item
+            .second-carousel__video
+              img(src="../img/video.jpg").second-carousel__video__preview
+              a(href="#")
+                img(src="../img/play.png")
+                span Как это работает
+            .second-carousel__info
+              h2.second-carousel__title Только с нами 
+                br
+                | вы сможете знатно
+                br
+                | угареть!3
+              p.second-carousel__text Гляньте наше чумовое видео, если не верите.
+                br
+                | Если хотите и вам такое же по итогу снимем — 
+                br 
+                | будет что вспомнить.
+              ul.second-carousel__list
+                li
+                  img(src="../img/world.png")
+                  | Работаем в любой точке планеты
+                li
+                  img(src="../img/space.png")
+                  | Но если на Земле все видели, то no problem...
+    section.progress
+      .container
+        h2.progress__title Как это было
+        .progress__row
+          .progress__slider
+            .progress-carousel.owl-carousel
+              img(src="../img/montain.jpg")
+              img(src="../img/montain.jpg")
+              img(src="../img/montain.jpg")
+              img(src="../img/montain.jpg")
+            .slider-counter
+            p.progress__slider__text Покорили ледяные вершины
+              br
+              | с коммандой 
+              span.green HBO
+            span.progress__slider__text-side Восхождение
+          p.progress__text
+            | Находим 
+            br
+            span.green сильные стороны 
+            br
+            | вашей команды!
+        .progress__row.reverse
+          .progress__slider
+            .progress-carousel.owl-carousel
+              img(src="../img/fish.jpg")
+              img(src="../img/fish.jpg")
+              img(src="../img/fish.jpg")
+              img(src="../img/fish.jpg")
+              img(src="../img/fish.jpg")
+            .slider-counter
+            p.progress__slider__text Поплавали за рыбками
+              br
+              | с 
+              span.green National Geographic
+            span.progress__slider__text-side Погружение
+          p.progress__text
+            | Создаем самую
+            br
+            | настоящую
+            br
+            span.green dream-team!
+    include ../includes/footer
